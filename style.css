@@ -1,0 +1,45 @@
+.container{
+    /* background-color: #eee;  */
+    width: 600px !important; 
+    /* text-align: center; */
+    margin-top: 200px;
+}
+.card{
+    margin-right: auto;
+    margin-left: auto;
+}
+li{
+    cursor: pointer;
+}
+li:hover{
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+#second{
+    display: none;
+}
+#third{
+    display: none;
+}
+#fourth{
+    display: none;
+}
+#fifth{
+    display: none;
+}
+#sixth{
+    display: none;
+}
+#seventh{
+    display: none;
+}
+#eighth{
+    display: none;
+}
+#ninth{
+    display: none;
+}
+#tenth{
+    display: none;
+}
