@@ -10,249 +10,389 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/animate.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="icon" href="images/favicon.png"/>
+    <!-- <link rel="icon" href="images/favicon.png"/> -->
   </head>
 
   <body>
     <div class="container">
+
+      <h2 style="text-align: center; margin-bottom: 15px;">Funny Trick Questions</h2>
         
-        <div class="card border-primary mb-3 animated bounceInLeft" style="max-width: 20rem;" onclick="toSecond()" id="first">
+        <div class="card shadow-lg border-primary mb-3 animated bounceInLeft" style="max-width: 30rem;" id="first">
           <div class="card-header">1. You're 3rd place right now in a race. What place are you in when you pass the person in 2nd place?</div>
           <div class="card-body text-primary">
             <ul class="list-group">
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                A. 1st
-                <span class="badge badge-primary badge-pill" onload="myRand()"></span>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">A. 1st</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                B. 2nd
-                <span class="badge badge-primary badge-pill">2</span>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio2">B. 2nd</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                C. 3rd
-                <span class="badge badge-primary badge-pill">1</span>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio3">C. 3rd</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                D. None of the above.
-                <span class="badge badge-primary badge-pill">1</span>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio4">D. None of the above.</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
             </ul>
           </div>
+          <div style="text-align: center">
+            <button class="btn btn-primary" onclick="toSecond()">Next</button>
+          </div>
         </div>
 
-        <div class="card border-primary mb-3 animated bounceInLeft" style="max-width: 20rem;" onclick="toThird()" id="second">
+        <div class="card shadow-lg border-primary mb-3 animated bounceInLeft" style="max-width: 30rem;" id="second">
           <div class="card-header">2. How many months have 28 days?</div>
           <div class="card-body text-primary">
             <ul class="list-group">
               <li class="list-group-item d-flex justify-content-between align-items-center">
                 A. 2
-                <span class="badge badge-primary badge-pill">14</span>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio11" name="customRadioalpha" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio11">A. 1st</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
                 B. 1
-                <span class="badge badge-primary badge-pill">2</span>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio12" name="customRadioalpha" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio12">A. 1st</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
                 C. All of them
-                <span class="badge badge-primary badge-pill">1</span>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio13" name="customRadioalpha" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio13">A. 1st</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                  D. Depends if there's a leap year or not.
-                <span class="badge badge-primary badge-pill">1</span>
+                D. Depends if there's a leap year or not.
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio14" name="customRadioalpha" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio14">A. 1st</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
             </ul>
           </div>
+          <div style="text-align: center">
+            <button class="btn btn-primary" onclick="toThird()">Next</button>
+          </div>
         </div>
         
-        <div class="card border-primary mb-3 animated bounceInLeft" style="max-width: 20rem;" onclick="toFourth()" id="third">
+        <div class="card shadow-lg border-primary mb-3 animated bounceInLeft" style="max-width: 30rem;" id="third">
           <div class="card-header">3. How many 0.5cm slices of breads can you cut from a whole bread that's 25cm long? </div>
           <div class="card-body text-primary">
             <ul class="list-group">
               <li class="list-group-item d-flex justify-content-between align-items-center">
                 A. 2
-                <span class="badge badge-primary badge-pill">14</span>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">A. 1st</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
                 B. 1
-                <span class="badge badge-primary badge-pill">2</span>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">A. 1st</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
                 C. All of them
-                <span class="badge badge-primary badge-pill">1</span>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">A. 1st</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                  D. Depends if there's a leap year or not.
-                <span class="badge badge-primary badge-pill">1</span>
+                D. Depends if there's a leap year or not.
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">A. 1st</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
             </ul>
           </div>
+          <div style="text-align: center">
+            <button class="btn btn-primary" onclick="toFourth()">Next</button>
+          </div>
         </div>
 
-        <div class="card border-primary mb-3 animated bounceInLeft" style="max-width: 20rem;" onclick="toFifth()" id="fourth">
-          <div class="card-header">4. How many 0.5cm slices of breads can you cut from a whole bread that's 25cm long? </div>
+        <div class="card shadow-lg border-primary mb-3 animated bounceInLeft" style="max-width: 30rem;" id="fourth">
+          <div class="card-header">4. The answer is really big. </div>
           <div class="card-body text-primary">
             <ul class="list-group">
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                A. 2
-                <span class="badge badge-primary badge-pill">14</span>
+                A. THE ANSWER.
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">A. 1st</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                B. 1
-                <span class="badge badge-primary badge-pill">2</span>
+                B. Really big.
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">A. 1st</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                C. All of them
-                <span class="badge badge-primary badge-pill">1</span>
+                C. An elephant.
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">A. 1st</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                  D. Depends if there's a leap year or not.
-                <span class="badge badge-primary badge-pill">1</span>
+                D. The data given is insufficient.
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">A. 1st</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
             </ul>
           </div>
+          <div style="text-align: center">
+            <button class="btn btn-primary" onclick="toFifth()">Next</button>
+          </div>
         </div>
 
-        <div class="card border-primary mb-3 animated bounceInLeft" style="max-width: 20rem;" onclick="toSixth()" id="fifth">
-          <div class="card-header">5. How??? </div>
+        <div class="card shadow-lg border-primary mb-3 animated bounceInLeft" style="max-width: 30rem;" id="fifth">
+          <div class="card-header">5. Divide 30 by half and add ten.  </div>
           <div class="card-body text-primary">
             <ul class="list-group">
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                A. 2
-                <span class="badge badge-primary badge-pill">14</span>
+                A. 40.5
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">A. 1st</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                B. 1
-                <span class="badge badge-primary badge-pill">2</span>
+                B. 50
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">A. 1st</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                C. All of them
-                <span class="badge badge-primary badge-pill">1</span>
+                C. 70
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">A. 1st</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                  D. Depends if there's a leap year or not.
-                <span class="badge badge-primary badge-pill">1</span>
+                D. I know this is a trick question, so NONE. Ha!
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">A. 1st</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
             </ul>
           </div>
+          <div style="text-align: center">
+            <button class="btn btn-primary" onclick="toSixth()">Next</button>
+          </div>
         </div>
 
-        <div class="card border-primary mb-3 animated bounceInLeft" style="max-width: 20rem;" onclick="toSeventh()" id="sixth">
-          <div class="card-header">6. How many 0.5cm slices of breads can you cut from a whole bread that's 25cm long? </div>
+        <div class="card shadow-lg border-primary mb-3 animated bounceInLeft" style="max-width: 30rem;" id="sixth">
+          <div class="card-header">6. There are two clocks of different colors: the red clock is broken and doesn't run at all, but the blue clock loses one second every 24 hours. Which clock is more accurate?  </div>
           <div class="card-body text-primary">
             <ul class="list-group">
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                A. 2
-                <span class="badge badge-primary badge-pill">14</span>
+                A. The red clock.
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">A. 1st</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                B. 1
-                <span class="badge badge-primary badge-pill">2</span>
+                B. The blue clock.
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">A. 1st</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                C. All of them
-                <span class="badge badge-primary badge-pill">1</span>
+                C. Neither.
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">A. 1st</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                  D. Depends if there's a leap year or not.
-                <span class="badge badge-primary badge-pill">1</span>
+                D. Both.
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">A. 1st</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
             </ul>
           </div>
+          <div style="text-align: center">
+            <button class="btn btn-primary" onclick="toSeventh()">Next</button>
+          </div>
         </div>
 
-        <div class="card border-primary mb-3 animated bounceInLeft" style="max-width: 20rem;" onclick="toEighth()" id="seventh">
-          <div class="card-header">7. How many 0.5cm slices of breads can you cut from a whole bread that's 25cm long? </div>
+        <div class="card shadow-lg border-primary mb-3 animated bounceInLeft" style="max-width: 30rem;" id="seventh">
+          <div class="card-header">7. A farmer has 17 sheep, but all of them but 8 die. How many sheep are still standing?  </div>
           <div class="card-body text-primary">
             <ul class="list-group">
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                A. 2
-                <span class="badge badge-primary badge-pill">14</span>
+                A. 8
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">A. 1st</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                B. 1
-                <span class="badge badge-primary badge-pill">2</span>
+                B. 9
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">A. 1st</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                C. All of them
-                <span class="badge badge-primary badge-pill">1</span>
+                C. 25
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">A. 1st</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                  D. Depends if there's a leap year or not.
-                <span class="badge badge-primary badge-pill">1</span>
+                D. 35
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">A. 1st</label>
+                </div>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
             </ul>
           </div>
+          <div style="text-align: center">
+           <button class="btn btn-primary" onclick="toEighth()">Next</button>
+          </div>
         </div>
 
-        <div class="card border-primary mb-3 animated bounceInLeft" style="max-width: 20rem;" onclick="toNinth()" id="eighth">
-          <div class="card-header">8. How many 0.5cm slices of breads can you cut from a whole bread that's 25cm long? </div>
+        <div class="card shadow-lg border-primary mb-3 animated bounceInLeft" style="max-width: 30rem;" id="eighth">
+          <div class="card-header">8. If a leaf falls to the ground in a forest and no one hears it, does it make a sound?  </div>
           <div class="card-body text-primary">
             <ul class="list-group">
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                A. 2
-                <span class="badge badge-primary badge-pill">14</span>
+                A. Yes.
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                B. 1
-                <span class="badge badge-primary badge-pill">2</span>
+                B. No.
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                C. All of them
-                <span class="badge badge-primary badge-pill">1</span>
+                C. Depends on how heavy the leaf was.
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                  D. Depends if there's a leap year or not.
-                <span class="badge badge-primary badge-pill">1</span>
+                D. Depends on where it landed.
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
             </ul>
           </div>
+          <div style="text-align: center">
+            <button class="btn btn-primary" onclick="toNinth()">Next</button>
+          </div>
         </div>
 
-        <div class="card border-primary mb-3 animated bounceInLeft" style="max-width: 20rem;" onclick="toFinal()" id="ninth">
-          <div class="card-header">9. How many 0.5cm slices of breads can you cut from a whole bread that's 25cm long? </div>
+        <div class="card shadow-lg border-primary mb-3 animated bounceInLeft" style="max-width: 30rem;" id="ninth">
+          <div class="card-header">9. There are 45 apples. If you pick up 3 apples, how many apples are there?  </div>
           <div class="card-body text-primary">
             <ul class="list-group">
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                A. 2
-                <span class="badge badge-primary badge-pill">14</span>
+                A. 3
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                B. 1
-                <span class="badge badge-primary badge-pill">2</span>
+                B. 42
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                C. All of them
-                <span class="badge badge-primary badge-pill">1</span>
+                C. 45
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                  D. Depends if there's a leap year or not.
-                <span class="badge badge-primary badge-pill">1</span>
+                D. 125
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
             </ul>
           </div>
+          <div style="text-align: center">
+           <button class="btn btn-primary" onclick="toTenth()">Next</button>
+          </div>
         </div>
 
-        <div class="card border-primary mb-3 animated bounceInLeft" style="max-width: 20rem;" onclick="toFinal()" id="tenth">
+        <div class="card shadow-lg border-primary mb-3 animated bounceInLeft" style="max-width: 30rem;" id="tenth">
           <div class="card-header">10. How many 0.5cm slices of breads can you cut from a whole bread that's 25cm long? </div>
           <div class="card-body text-primary">
             <ul class="list-group">
               <li class="list-group-item d-flex justify-content-between align-items-center">
                 A. 2
-                <span class="badge badge-primary badge-pill">14</span>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
                 B. 1
-                <span class="badge badge-primary badge-pill">2</span>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
                 C. All of them
-                <span class="badge badge-primary badge-pill">1</span>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center">
                   D. Depends if there's a leap year or not.
-                <span class="badge badge-primary badge-pill">1</span>
+                <span class="badge badge-primary badge-pill"><script>document.write(Math.floor(Math.random() * Math.floor(99)))</script></span>
               </li>
             </ul>
+          </div>
+          <div style="text-align: center">
+           <button class="btn btn-primary" onclick="toFinal()">Next</button>
           </div>
         </div>
 
