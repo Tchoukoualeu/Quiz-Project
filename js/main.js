@@ -1,6 +1,7 @@
 
 function toSecond(){
-    document.getElementById('first').style.display = 'none';
+    // document.getElementById('first').style.display = 'none';
+    document.getElementById('first').classList = 'card shadow-lg border-primary mb-3 animated bounceOutRight';
     document.getElementById('second').style.display = 'block';
 }
 
@@ -46,6 +47,6 @@ function toTenth(){
 
 function toFinal(){
     document.getElementById('tenth').style.display = 'none';
-    document.getElementById('final').style.display = 'block';
+    // document.getElementById('final').style.display = 'block';
 }
 

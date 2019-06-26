@@ -1,3 +1,7 @@
+html, body {
+    overflow: hidden;
+}
+
 .container{
     /* background-color: #eee;  */
     width: 600px !important; 
@@ -8,10 +12,23 @@
     margin-right: auto;
     margin-left: auto;
 }
-
+#first{
+    position: absolute !important;
+    left: 50% !important;
+    margin-left: -15rem !important;
+    top: 50% !important;
+    margin-top: -15rem !important;
+    z-index: 2 !important;
+}
 
 #second{
     display: none;
+    position: absolute !important;
+    left: 50% !important;
+    margin-left: -15rem !important;
+    top: 50% !important;
+    margin-top: -15rem !important;
+    z-index: 1 !important;
 }
 #third{
     display: none;
